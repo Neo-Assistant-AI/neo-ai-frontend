@@ -1,0 +1,139 @@
+  @tailwind base;
+
+@layer base {
+  button,
+  [type='button'],
+  [type='reset'],
+  [type='submit'] {
+    background: none;
+  }
+}
+
+@tailwind components;
+
+@layer base {
+  @font-face {
+    font-family: 'Satoshi12px';
+    src: url('./fonts/Satoshi-Regular.woff2') format('woff2');
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  @font-face {
+    font-family: 'Satoshi14px';
+    src: url('./fonts/Satoshi-Regular.woff2') format('woff2');
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @font-face {
+    font-family: 'Satoshi16px';
+    src: url('./fonts/Satoshi-Regular.woff2') format('woff2');
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @font-face {
+    font-family: 'Satoshi20px';
+    src: url('./fonts/Satoshi-Bold.woff2') format('woff2');
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @font-face {
+    font-family: 'Satoshi24px';
+    src: url('./fonts/Satoshi-Bold.woff2') format('woff2');
+    font-display: swap;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@tailwind utilities;
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .word-spacing-16 {
+    word-spacing: 16px;
+  }
+
+  .break-word {
+    word-break: break-word;
+  }
+}
+
+.dark body {
+  background-color: #000000;
+}
+
+body {
+  font-family: 'Satoshi16px';
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(109.6deg, rgb(148, 233, 194) 11.2%, rgb(224, 235, 186) 91.1%);
+}
+
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+.bouncing-loader {
+  display: flex;
+  justify-content: center;
+}
+
+.bouncing-loader > div {
+  width: 8px;
+  height: 8px;
+  margin: 3px 6px;
+  border-radius: 50%;
+  background-color: #a3a1a1;
+  opacity: 1;
+  animation: bouncing-loader 0.6s infinite alternate;
+}
+
+@keyframes bouncing-loader {
+  to {
+    opacity: 0.1;
+    transform: translateY(-4px);
+  }
+}
+
+.bouncing-loader > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bouncing-loader > div:nth-child(3) {
+  animation-delay: 0.4s;
+}

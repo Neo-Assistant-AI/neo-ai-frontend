@@ -1,0 +1,85 @@
+{
+  "name": "thoughts.ai",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@material-tailwind/react": "^2.1.4",
+    "@mui/icons-material": "^5.14.12",
+    "@mui/material": "^5.14.11",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/webextension-polyfill": "0.9.1",
+    "axios": "^1.3.4",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "classnames": "^2.3.2",
+    "crypto-browserify": "^3.12.0",
+    "crypto-js": "4.1.1",
+    "degen": "^0.0.122",
+    "dotenv-webpack": "7.1.0",
+    "editorjs-parser": "1.5.3",
+    "highlight.js": "^11.8.0",
+    "html-beautify": "^1.0.4",
+    "lottie-react": "^2.4.0",
+    "marked": "^9.0.3",
+    "path-browserify": "^1.0.1",
+    "postcss": "^8.4.31",
+    "postcss-loader": "^7.3.3",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-contenteditable": "^3.3.6",
+    "react-dom": "^18.2.0",
+    "react-editor-js": "2.1.0",
+    "react-loading-skeleton": "^3.1.1",
+    "react-router-dom": "^6.8.1",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^9.1.1",
+    "recoil": "^0.7.6",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "typescript": "^4.4.2",
+    "util": "^0.12.5",
+    "web-vitals": "^2.1.0",
+    "webextension-polyfill": "0.10.0"
+  },
+  "scripts": {
+    "start": "NEXT_PUBLIC_FLOW_NETWORK=local && react-app-rewired start",
+    "build": "react-app-rewired build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "raw-loader": "^4.0.2",
+    "react-app-rewired": "^2.2.1",
+    "tailwindcss": "^3.2.7"
+  },
+  "main": "config-overrides.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

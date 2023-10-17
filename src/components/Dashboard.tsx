@@ -91,7 +91,7 @@ function Dashboard() {
             setMessages([...messages, { question: prompt, answer: null, source_documents: null }])
             updatePrompt("")
 
-            const res = await fetch("https://127.0.0.1:5000/chat", requestOptions);
+            const res = await fetch("http://ec2-13-50-120-190.eu-north-1.compute.amazonaws.com/chat", requestOptions);
 
             if (!res.ok) {
                 throw new Error("Something went wrong");

@@ -1,4 +1,4 @@
-# NeoAI Assistant Backend
+# NeoAI Assistant Frontend
 
 ## Vision
 **NeoAI Assistant**: Empowering developers on NEO Blockchain with the power of AI.
@@ -21,7 +21,7 @@ To get started with NeoAI Assistant Backend, follow these steps:
 1. **Installation**: Clone this repository and install the necessary dependencies.
 
     ```bash
-    git clone https://github.com/Neo-Assistant-AI/neo-ai-frontend
+    git clone [https://github.com/Neo-Assistant-AI/neo-ai-frontend](https://github.com/Neo-Assistant-AI/neo-ai-frontend.git)
     cd neo-ai-frontend
     yarn 
     ```

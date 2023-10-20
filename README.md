@@ -21,7 +21,7 @@ To get started with NeoAI Assistant Backend, follow these steps:
 1. **Installation**: Clone this repository and install the necessary dependencies.
 
     ```bash
-    git clone [https://github.com/Neo-Assistant-AI/neo-ai-frontend](https://github.com/Neo-Assistant-AI/neo-ai-frontend.git)
+    git clone https://github.com/Neo-Assistant-AI/neo-ai-frontend
     cd neo-ai-frontend
     yarn 
     ```
